@@ -1,7 +1,8 @@
+opts = -pedantic -Wall -std=c++26
 program = sample
 
 build:
-	clang++ -Wall -std=c++26 -c *.cpp
+	clang++ $(opts) -c *.cpp
 	clang++ *.o -o $(program)
 
 clean:
