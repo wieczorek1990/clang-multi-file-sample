@@ -5,5 +5,8 @@ build:
 	clang++ $(opts) -c *.cpp
 	clang++ *.o -o $(program)
 
+run:
+	./$(program)
+
 clean:
 	rm -rf *.o $(program)
